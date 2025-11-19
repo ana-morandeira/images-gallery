@@ -1,7 +1,7 @@
 h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(14, 124, 88);
-    background-color: rgb(162, 228, 228);
+    background-color: rgb(162, 228, 228); text-align: center;text-decoration-style: wavy ; font-style: italic;
     }  
     
 body{
@@ -13,16 +13,17 @@ body{
         display: grid;
         gap: 10px;
         max-width: 1200px;
-        grid-template-columns:minmax(300px,1fr);
+        grid-template-columns:1fr;
      }
-     @media {
-        grid-template-columns: 1fr;
-     }
-     @media (min-width: 650px){
-        grid-template-columns: 2fr;
+     
+     @media (min-width: 650px)
+     {main{
+        grid-template-columns: repeat(2, 1fr);
+        }
      }
      @media (min-width:1000px){
-        grid-template-columns: 3fr;
+        main{
+        grid-template-columns: repeat(3,1fr;}
      }
 
     
